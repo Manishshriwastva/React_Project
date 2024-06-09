@@ -52,7 +52,7 @@ function Registerr() {
             <h1 className='text-center' style={{ color: 'skyblue' }}>Register Here</h1>
             <br />
           </div>
-          <form onSubmit={handleForm}>
+          <form onSubmit={handleForm} style={{backgroundColor:'#edf2f7',padding:'40px',marginBottom:'20px'}}>
             <div className='mb-3'>
               <label htmlFor='name' className='form-label'>Name</label>
               <input type='text' className='form-control' id='name' value={name} placeholder='Enter Your Name' onChange={handleName} />
@@ -73,7 +73,7 @@ function Registerr() {
               <input type='password' className='form-control' id='repassword' value={repassword} placeholder='Enter Your Repassword' onChange={handleRepassword} />
             </div>
 
-            <button type='submit' className='btn btn-success btn-block'>Submit</button>
+            <button type='submit' className='btn btn-primary btn-block'>Submit</button>
           </form>
         </div>
       </div>
@@ -81,7 +81,7 @@ function Registerr() {
 
 
 
-      <Footer/>
+      <Footer />
       
     </>
   );
