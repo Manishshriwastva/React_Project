@@ -45,26 +45,41 @@ function Registerr() {
 
     <Navv/> <br /> <br />
       
-      <div className='text-center'>
-        
-      <h1 className='text-center'style={{color:'blue'}}>Regester Here </h1> <br />
+    <div className='container'>
+      <div className='row justify-content-center'>
+        <div className='col-md-6'>
+          <div className='text-center'>
+            <h1 className='text-center' style={{ color: 'skyblue' }}>Register Here</h1>
+            <br />
+          </div>
+          <form onSubmit={handleForm}>
+            <div className='mb-3'>
+              <label htmlFor='name' className='form-label'>Name</label>
+              <input type='text' className='form-control' id='name' value={name} placeholder='Enter Your Name' onChange={handleName} />
+            </div>
 
-<form action="" onSubmit={handleForm}>
-<label htmlFor="">Name</label>
-  <input type="text" value={name} placeholder='Enter Your Name' onChange={handleName}/> <br /> <br />
+            <div className='mb-3'>
+              <label htmlFor='email' className='form-label'>Email</label>
+              <input type='email' className='form-control' id='email' value={email} placeholder='Enter Your Email' onChange={handleEmail} />
+            </div>
 
-  <label htmlFor="">Email</label>
-  <input type="text" value={email} placeholder='Enter Your Email' onChange={handleEmail} /> <br /> <br />
+            <div className='mb-3'>
+              <label htmlFor='password' className='form-label'>Password</label>
+              <input type='password' className='form-control' id='password' value={password} placeholder='Enter Your Password' onChange={handlePassowrd} />
+            </div>
 
-  <label htmlFor="">Password</label>
-  <input type="text" value={password} placeholder='Enter Your Password' onChange={handlePassowrd} /> <br /> <br />
+            <div className='mb-3'>
+              <label htmlFor='repassword' className='form-label'>Re-password</label>
+              <input type='password' className='form-control' id='repassword' value={repassword} placeholder='Enter Your Repassword' onChange={handleRepassword} />
+            </div>
 
-  <label htmlFor="">Re-password</label>
-  <input type="text" value={repassword} placeholder='Enter Your Repassword' onChange={handleRepassword} />  <br /><br />
-
-  <button className='btn btn-success'>Submit</button>
-</form>
+            <button type='submit' className='btn btn-success btn-block'>Submit</button>
+          </form>
+        </div>
       </div>
+    </div>
+
+
 
       <Footer/>
       
